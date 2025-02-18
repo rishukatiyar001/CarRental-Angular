@@ -1,0 +1,70 @@
+/* Floating WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* WhatsApp Chat Box */
+  .whatsapp-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .whatsapp-header {
+    background: #25d366;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Chat Body */
+  .whatsapp-body {
+    padding: 15px;
+    background: #f9f9f9;
+  }
+  
+  /* Chat Footer */
+  .whatsapp-footer {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .whatsapp-footer .whatsapp-link {
+    background: #25d366;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

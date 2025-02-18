@@ -1,0 +1,48 @@
+<header>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">
+            <img src="assets/logo-white.png" alt="logo" class="logo-white" />
+            <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
+            <span>Car Rental</span>
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn" (click)="toggleMenu()">
+          <i [class]="isMenuOpen ? 'ri-close-line' : 'ri-menu-line'"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links" [class.open]="isMenuOpen">
+        <!-- <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#deals">Rental Deals</a></li>
+        <li><a href="#choose">Why Choose Us</a></li>
+        <li><a href="#client">Testimonials</a></li>
+        <li><a href="#">Register</a></li>
+      </ul> -->
+      <li><a [routerLink]="['/home']" fragment="home" [queryParamsHandling]="'preserve'" (click)="isMenuOpen = false">Home</a></li>
+  <li><a [routerLink]="['/home']" fragment="about" [queryParamsHandling]="'preserve'" (click)="isMenuOpen = false">About</a></li>
+  <li><a [routerLink]="['/home']" fragment="deals" [queryParamsHandling]="'preserve'" (click)="isMenuOpen = false">Rental Deals</a></li>
+  <li><a [routerLink]="['/home']" fragment="choose" [queryParamsHandling]="'preserve'" (click)="isMenuOpen = false">Why Choose Us</a></li>
+  <li><a [routerLink]="['/home']" fragment="client" [queryParamsHandling]="'preserve'" (click)="isMenuOpen = false">Testimonials</a></li>
+</ul>
+      <div class="nav__btns">
+        <button class="btn">Register</button>
+      </div>
+    </nav>
+    <div class="header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <h2>👍 100% Trusted car rental platform in India</h2>
+        <h1>FAST AND EASY WAY TO RENT A CAR</h1>
+        <p class="section__description">
+          Discover a seamless car rental experience with us. Choose from a
+          range of premium vehicles to suit your style and needs, and hit the
+          road with confidence. Quick, easy, and reliable - rent your ride
+          today!
+        </p>
+      </div>
+    </div>
+  </header>
